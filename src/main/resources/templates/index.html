@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pitanja</title>
+</head>
+<body>
+    <div align="center">
+        <div th:each="question : ${listQuestions}">
+            <p th:text="${question.description}">Pitanje</p>
+            <p th:text="${question.question_type.description}">Tip pitanja</p>
+        </div>
+    </div>
+
+</body>
+</html>
